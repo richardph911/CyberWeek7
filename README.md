@@ -14,8 +14,8 @@ Time spent: **5** hours spent in total
 
   - [x] GIF Walkthrough: ![Alt Text](http://g.recordit.co/AkE1Bui54v.gif)
   - [x] Steps to recreate: 
-    + ++ If the attacker types /* <a href="[caption code=]"></a><a title=" onmouseover=alert('test')  ">link</a>. */
-    + ++ Then WP will become "test" hyperlink
+    - ++ If the attacker types /* <a href="[caption code=]"></a><a title=" onmouseover=alert('test')  ">link</a>. */
+    - ++ Then WP will become "test" hyperlink
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   
@@ -29,10 +29,10 @@ Time spent: **5** hours spent in total
   - [x] GIF Walkthrough: ![Alt Text](http://g.recordit.co/8TqbMU0RRt.gif)
   
   - [x] Steps to recreate: 
-   ++ Create a new user account
-   ++ Enter admin as a username and an invalid password to log in such as 123
-   ++ An error message is shown to tell attacker where the error comes from.
-   ++ When you randomly input username and password, it shows the error which is invalid username
+   - ++ Create a new user account
+   - ++ Enter admin as a username and an invalid password to log in such as 123
+   - ++ An error message is shown to tell attacker where the error comes from.
+   - ++ When you randomly input username and password, it shows the error which is invalid username
    
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
@@ -45,7 +45,8 @@ Time spent: **5** hours spent in total
   - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/lCyLMmCEx1.gif)
   
   - [x] Steps to recreate: 
-       -->  Create a new post, and insert the code [caption width="1" caption='<a href="' ">]</a><a href=" onmouseover='alert("exploit!")' ">Click!</a> into the post content . Then it shows 1 when you view the comment of this post in future.
+       - ++ Create a new post, and insert the code [caption width="1" caption='<a href="' ">]</a><a href=" onmouseover='alert("exploit!")' ">Click!</a> into the post content . 
+       - ++ Then it shows 1 when you view the comment of this post in future.
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 ### 4. (Optional) Vulnerability Name or ID : Oversized File Upload Error CSS
