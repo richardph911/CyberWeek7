@@ -11,6 +11,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
+    ![Alt Text](http://g.recordit.co/AkE1Bui54v.gif)
   - [x] GIF Walkthrough: http://g.recordit.co/AkE1Bui54v.gif
   - [x] Steps to recreate: 
     + ++ If the attacker types /* <a href="[caption code=]"></a><a title=" onmouseover=alert('test')  ">link</a>. */
