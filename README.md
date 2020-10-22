@@ -42,7 +42,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.4
-  - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/lCyLMmCEx1)
+  - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/lCyLMmCEx1.gif)
   
   - [x] Steps to recreate: 
        -->  Create a new post, and insert the code [caption width="1" caption='<a href="' ">]</a><a href=" onmouseover='alert("exploit!")' ">Click!</a> into the post content . Then it shows 1 when you view the comment of this post in future.
@@ -53,7 +53,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.12
-  - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/JT2JZsTqdN)
+  - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/JT2JZsTqdN.gif)
   
   - [x] Steps to recreate: 
   - ++ Create a new video format post
