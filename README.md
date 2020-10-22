@@ -1,26 +1,97 @@
-# CyberWeek7
-  # 1. Cross-site scripting 
-  
-  Vulnerability in the text editor box in pages and writing/editing posts.
-   - Vulnerability types: XSS
-   - Tested in v. 4.2
-   - Fixed in v. 4.2.3
-  - Step to recreate:
-  ++ If the attacker types /* <a href="[caption code=]"></a><a title=" onmouseover=alert('test')  ">link</a>. */
-  ++ Then WP will become "test" hyperlink
-  
-  GIF Walkthrough: 
-  http://g.recordit.co/AkE1Bui54v.gif
+# Project 7 - WordPress Pentesting
 
-  # 2. User Enumeration
+Time spent: **10** hours spent in total
+
+> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+
+## Pentesting Report
+
+### 1. (Required) Vulnerability Name or ID: Authenticated Stored Cross-Site Scripting(XSS1)
+  - [ ] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.3
+  - [ ] GIF Walkthrough: http://g.recordit.co/AkE1Bui54v.gif
+  - [ ] Steps to recreate: 
+    + ++ If the attacker types /* <a href="[caption code=]"></a><a title=" onmouseover=alert('test')  ">link</a>. */
+    + ++ Then WP will become "test" hyperlink
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   
-   - Vulnerability types: User Enumeration
-   - Tested in v. 4.2
-   - Fixed in v. 4.7.3
-   - GIF Walkthrough: http://g.recordit.co/8TqbMU0RRt.gif
-   
-   - Step to recreate:
+  
+  
+### 2. (Required) Vulnerability Name or ID: User Enumeration 
+  - [ ] Summary: 
+    - Vulnerability types: User Enumeration
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.3
+  - [ ] GIF Walkthrough: http://g.recordit.co/8TqbMU0RRt.gif
+  - [ ] Steps to recreate: 
    ++ Create a new user account
    ++ Enter admin as a username and an invalid password to log in such as 123
    ++ An error message is shown to tell attacker where the error comes from.
    ++ When you randomly input username and password, it shows the error which is invalid username
+   
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
+### 3. (Required) Vulnerability Name or ID: Unauthenticated Stored Cross-Site Scripting (XSS2)
+  - [ ] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.4
+  - [ ] GIF Walkthrough: https://recordit.co/lCyLMmCEx1
+  - [ ] Steps to recreate: 
+       -->  Create a new post, and insert the code [caption width="1" caption='<a href="' ">]</a><a href=" onmouseover='alert("exploit!")' ">Click!</a> into the post content . Then it shows 1 when you view the comment of this post in future.
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+### 4. (Optional) Vulnerability Name or ID
+  - [ ] Summary: 
+    - Vulnerability types:
+    - Tested in version:
+    - Fixed in version: 
+  - [ ] GIF Walkthrough: 
+  - [ ] Steps to recreate: 
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+### 5. (Optional) Vulnerability Name or ID
+  - [ ] Summary: 
+    - Vulnerability types:
+    - Tested in version:
+    - Fixed in version: 
+  - [ ] GIF Walkthrough: 
+  - [ ] Steps to recreate: 
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+
+## Assets
+
+List any additional assets, such as scripts or files
+
+## Resources
+
+- [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
+- [WordPress Developer Reference](https://developer.wordpress.org/reference/)
+
+GIFs created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while doing the work
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
