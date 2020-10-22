@@ -11,8 +11,8 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
-    ![Alt Text](http://g.recordit.co/AkE1Bui54v.gif)
-  - [x] GIF Walkthrough: http://g.recordit.co/AkE1Bui54v.gif
+
+  - [x] GIF Walkthrough: ![Alt Text](http://g.recordit.co/AkE1Bui54v.gif)
   - [x] Steps to recreate: 
     + ++ If the attacker types /* <a href="[caption code=]"></a><a title=" onmouseover=alert('test')  ">link</a>. */
     + ++ Then WP will become "test" hyperlink
@@ -26,7 +26,8 @@ Time spent: **5** hours spent in total
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.7.3
-  - [x] GIF Walkthrough: http://g.recordit.co/8TqbMU0RRt.gif
+  - [x] GIF Walkthrough: ![Alt Text](http://g.recordit.co/8TqbMU0RRt.gif)
+  
   - [x] Steps to recreate: 
    ++ Create a new user account
    ++ Enter admin as a username and an invalid password to log in such as 123
@@ -41,7 +42,8 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.4
-  - [x] GIF Walkthrough: https://recordit.co/lCyLMmCEx1
+  - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/lCyLMmCEx1)
+  
   - [x] Steps to recreate: 
        -->  Create a new post, and insert the code [caption width="1" caption='<a href="' ">]</a><a href=" onmouseover='alert("exploit!")' ">Click!</a> into the post content . Then it shows 1 when you view the comment of this post in future.
   - [x] Affected source code:
@@ -51,7 +53,8 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.12
-  - [x] GIF Walkthrough: https://recordit.co/JT2JZsTqdN
+  - [x] GIF Walkthrough: ![Alt Text](https://recordit.co/JT2JZsTqdN)
+  
   - [x] Steps to recreate: 
   - ++ Create a new video format post
   - ++ Type in [embed src='https://youtube.com/embed/123\x3csvg onload=alert(123456)\x3e'][/embed]
